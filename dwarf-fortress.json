@@ -1,0 +1,11 @@
+﻿{
+    "version":  "0.40.24",
+    "url":  "http://www.bay12games.com/dwarves/df_40_24_win.zip",
+    "homepage":  "http://www.bay12games.com/dwarves/",
+    "hash":  "0c62952db3714b5bc591dab63b9fefd123f92b26e53649b0980bc4501bbb1a6b",
+    "pre_install": " 
+      $cmd = \"pushd $dir;$dir\\'Dwarf Fortress.exe';popd\" 
+      $cmd | out-file $dir\\dwarf-fortress.ps1 -encoding utf8
+    ",
+    "bin": "dwarf-fortress.ps1"
+}
